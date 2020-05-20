@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.col {
+  border: 1px solid red;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  background-color: #000000;
+  height: 6vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+  box-shadow: 3px 6px 21px -4px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+header span {
+  color: white;
+  cursor: context-menu;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+header span a:hover {
+  border-bottom: none;
+}
+header ul {
+  list-style: none;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  align-items: center;
+}
+header a {
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  flex: 1;
+}
+header a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+.content#index {
+  background-image: url("./img/wallpaper.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 80% bottom;
+  background-size: 1050px;
+  height: 94vh;
+}
+
+.content#about {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.content#about #introtext {
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 800;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content#about #introtext h1 {
+  font-size: 10em;
+}
+.content#about #dev-media {
+  border: 1px solid red;
+  display: flex;
+}
+.content#about #dev-media img {
+  width: 90px;
+  transition: 0.5s ease;
+}
+.content#about #dev-media ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 1px solid black;
+  width: 50%;
+  justify-content: space-around;
+}
+.content#about #dev-media ul li {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.content#about #dev-media ul img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  height: auto;
+  background: #39437e;
+}
+footer #information {
+  border: 1px solid yellow;
+  padding: 10px;
+}
+footer .card {
+  width: 45%;
+  border: 1px solid red;
+  margin: auto;
+  background-color: transparent;
+  color: black;
+}
+footer .card #avatar-cont img {
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+footer .card #avatar-cont img:hover {
+  transform: scale(1.1);
+}
+footer .card #main-title ul li h5 {
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding-bottom: 12px;
+  font-size: 1.3em;
+}
+footer .card #main-title ul li span {
+  font-size: 0.9em;
+}
+footer .card #desc {
+  text-align: left;
+  font-size: 0.8em;
+}
+footer .card #exp ul li {
+  font-size: 0.8em;
+}
+
+div.content {
+  padding: 25px;
+}
+div.content .jumbotron {
+  background: transparent;
+  width: 55%;
+}
+div.content .jumbotron #aboutme {
+  width: 75%;
+}
+div.content .jumbotron .btn {
+  background-color: #000000;
+  color: white;
+}
+div.content .jumbotron img {
+  width: 100%;
+  height: 150px;
+}
+div.content .jumbotron .card {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+div.content .jumbotron .card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1050px) {
+  header ul {
+    width: 40%;
+  }
+
+  div.content .jumbotron {
+    width: 100%;
+  }
+  div.content .jumbotron hr {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header ul {
+    width: 50%;
+  }
+
+  div.content .jumbotron {
+    color: white;
+    width: 100%;
+    background-color: rgba(39, 38, 38, 0.75);
+  }
+  div.content .jumbotron #aboutme {
+    color: black;
+  }
+}
+@media screen and (max-width: 768px) {
+  header span {
+    font-size: 1em;
+  }
+  header li {
+    font-size: 0.7em;
+  }
+
+  div#content .jumbotron #aboutme {
+    width: 100%;
+  }
+
+  footer .card #avatar-cont {
+    display: flex;
+  }
+  footer .card #avatar-cont img {
+    width: 150px;
+    margin: auto;
+  }
+  footer .card #first-card {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .card #first-card div {
+    width: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: column;
+  }
+  header span {
+    margin: 10px;
+    text-align: center;
+    font-size: 2em;
+  }
+  header ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  header li {
+    font-size: 1em;
+  }
+
+  div#content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div#about #introtext {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

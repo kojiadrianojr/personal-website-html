@@ -4,10 +4,6 @@
   padding: 0px;
 }
 
-.col {
-  border: 1px solid red;
-}
-
 html {
   font-size: 16px;
 }
@@ -79,7 +75,6 @@ header a:hover {
   width: 50%;
   margin: 0 auto;
   font-weight: 800;
-  border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +83,6 @@ header a:hover {
   font-size: 10em;
 }
 .content#about #dev-media {
-  border: 1px solid red;
   display: flex;
 }
 .content#about #dev-media img {
@@ -99,7 +93,6 @@ header a:hover {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  border: 1px solid black;
   width: 50%;
   justify-content: space-around;
 }
@@ -118,13 +111,14 @@ footer {
   background: #39437e;
 }
 footer #information {
-  border: 1px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
 }
 footer .card {
   width: 45%;
-  border: 1px solid red;
   margin: auto;
+  border: none;
   background-color: transparent;
   color: black;
 }
@@ -261,6 +255,13 @@ div.content .jumbotron .card:hover {
 
   div#about #introtext {
     display: none;
+  }
+
+  footer #information {
+    display: inline;
+  }
+  footer #information .card {
+    width: 100%;
   }
 }
 

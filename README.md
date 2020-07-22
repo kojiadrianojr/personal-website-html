@@ -1,3 +1,3 @@
-# Project 0
+# PERSONAL WEBSITE 
 
-Web Programming with Python and JavaScript
+created using HTML/CSS SASS
